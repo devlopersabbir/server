@@ -17,3 +17,6 @@ yarn.lock
 # ./build
 # build/
 # build/*
+
+.env
+pnpm-lock.yaml
