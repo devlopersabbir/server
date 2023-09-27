@@ -113,3 +113,24 @@
   - After that just add our docer image name. finished
 
 - [x] Run NodeJs Server from docker
+  ```console
+  docker ps
+  ```
+  - This command will help to see our docker container is running on which port
+  - **To Stop Server**
+  ```console
+  docker stop 63c5d19f046f
+  ```
+  you should add runnign container id to stop this
+
+###
+
+### Running node server with watching
+
+to watching all time i mean for the development we can use extra command
+
+```console
+docker run --rm -d -p 5000:5000 -v $(pwd):/node_server -name node_server_container node_server_image
+```
+
+if you using mac then run this command or if you are n windows then add `%cd%`
