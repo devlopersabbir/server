@@ -61,5 +61,30 @@
      `npm run start` based on your package.json file
 
 - [x] Build Docker Image
+
+  ```console
+  docker build -t node_server_image .
+  ```
+
+  #### Line Explain
+
+  - `docker build` is a command by default to builder our docker image. And ther
+    `-t` flag to help us make a name of our image.
+  - `node_server_image` is a just image name if you want you can make anything
+    it's just our docker image name. So, you can choice anything whatever you
+    want.
+  - `.` lastly dot so why dot? dot will help to build our docker image inside
+    our directory like `node_server`
+
+- [x] Check docker image
+  - Once you builded a docker image then you should check it's really created or
+    not.
+  - To check the docker image your can run this command
+  ```console
+  docker image ls
+  ```
+  this command means give me all list of our docker images
+  - Make sure we seen docker images. And copy the image name which we recently
+    created.
 - [ ] Create Docker Container
 - [ ] Run NodeJs Server from docker
