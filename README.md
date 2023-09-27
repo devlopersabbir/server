@@ -86,5 +86,30 @@
   this command means give me all list of our docker images
   - Make sure we seen docker images. And copy the image name which we recently
     created.
-- [ ] Create Docker Container
-- [ ] Run NodeJs Server from docker
+- [x] Create Docker Container & Run
+
+  ```console
+  docker run -rm -d -p 5000:5000 --name node_server_container node_server_image
+  ```
+
+  - docker run is default command to run a docker container.
+  - `-rm` is means remove. For example we have already a docker container then
+    if then if we want to run again our same docker container then it's make a
+    error because of our docker container is already have. So to fix this error
+    then we should use `-rm` flag to remove existing docker container and create
+    new one in the same nam.
+  - `-d` is mean.. out docker container will run in our system background. not
+    our terminal
+  - `-p` flag is means our docker port and our server port. The first port
+    `5000` this is our host port and second `5000` is our docker host port. If
+    you want you can customize it.
+
+    #####
+
+    **NOTE:** our server will run at `5000` port
+
+  - `--name` flag is means our docker container name,, yo can give anything for
+    creating a container
+  - After that just add our docer image name. finished
+
+- [x] Run NodeJs Server from docker
