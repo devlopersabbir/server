@@ -127,10 +127,14 @@
 
 ### Running node server with watching
 
-to watching all time i mean for the development we can use extra command
+to watch all time I mean for the development we can use extra command
 
 ```console
 docker run --rm -d -p 5000:5000 -v $(pwd):/node_server -name node_server_container node_server_image
 ```
 
-if you using mac then run this command or if you are n windows then add `%cd%`
+if you using a Mac, then run this command or if you are in Windows then add `%cd%`
+
+```console
+docker run --rm -d -p 5000:5000 -v "%CD%:/node_server" -name node_server_container node_server_image
+```
